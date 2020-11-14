@@ -9,7 +9,7 @@ POST https://localhost:3000/api/notifications
 Создаcт новое оповещение для всех или для одного
 
 {
-  typeNotification: Number, // 1..5
+  typeNotification: Number,
   headline: String,
   description: String
 }
