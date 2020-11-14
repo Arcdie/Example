@@ -21,4 +21,18 @@ module.exports = {
     host: process.env.REDIS_HOST,
     port: process.env.REDIS_PORT,
   },
+
+  secrets: {
+    salt: process.env.SECRET_SALT,
+  },
+
+  jwt: {
+    secret: process.env.SECRET_JWT,
+    expires: (7 * 24 * 60 * 60), // 7 дней
+
+    refresh: {
+      maxLength: 16,
+      expires: (30 * 24 * 60 * 60), // 30 дней
+    },
+  },
 };

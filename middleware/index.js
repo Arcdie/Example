@@ -47,7 +47,7 @@ if (process.env.environment !== 'production') {
   app.use(morgan);
 }
 
-app.use(csrf({ cookie: true }));
+// app.use(csrf({ cookie: true }));
 
 // Routing
 app.use('/', require('../routes'));
